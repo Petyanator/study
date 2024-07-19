@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@font-face{
+    font-family: 'Whenamechiinaamsa';
+    src: url(./fonts/adventpro-bold.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.navbar{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+.navbar a:hover{
+    background-color: white;
+    border-radius: 25%;
+    padding: 5px;
+
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Anton SC", sans-serif;
+}   
+body,a{
+    font-family: Whenamechiinaamsa;
+    background-color: rgb(67, 67, 67);
+    color: rgb(248, 248, 116);
+}
+
+div ul li{
+    display: inline-block;
+    padding:0;
+    text-align: center;
+    font-size: 35px;
+}
+div{
+    text-align: center;
+}
+nav ul{
+    background-color:rgb(248, 248, 116);
+    margin: 0;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 35px;  
+}
+nav ul li a{
+    color: rgb(67, 67, 67);
+    background-color: rgb(248, 248, 116);
+}
+body{
+    margin: 0px;
+}
+footer a{
+    text-decoration-line: none;
+    display: inline-block;
+    margin-right: 10px;
+    text-transform: uppercase;
+    top: 50%;
+}   
+
+.boxar{
+    height: 100px;
+    width: 100px;
+
+    background-color: rgb(248, 248, 116);
+    transition: transform 0.5s ease;
+}
+.boxar:hover{
+    transform: rotate(0.5turn);
+}
+div.boxar p{
+    color: black;
+    text-align: center;
+    padding-top: 95px;
+    font-size: 30px;
+}
+
+footer>a:hover{
+    color: rgb(67, 67, 67);
+    background-color: rgb(248, 248, 116);
+    border-radius: 25%;
+    padding: 3px;
+    position: absolute;
+
+}
+.story{
+    text-transform: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:left;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#page1,.foot1{
+    background-color: rgb(73, 39, 2);
+    color: rgb(192, 162, 144);
+}
+footer{
+    text-align: center;
+}
+.foot1:hover{
+    background-color: white;
+    color: rgb(91, 47, 1);
+}
+#about{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 23px;
+}
+h1 ~ h2{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+#page2, .foot2{
+    background-color: #385159;
+    color: #b6b8bc;
+}
+.foot2:hover{
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+#page3, .foot3{
+    background-color: rgb(51, 60, 71);
+    color: rgb(251, 220, 134);
+}
+.foot3:hover{
+    background-color: rgb(251, 220, 134);
+    color: rgb(51, 60, 71);
+}
+
+#idea{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 10px;
+}
+h2{
+    font-size: 50px;
+    padding: 40px;
+}
+#comon{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.start-info:hover{
+    transform: scale(125%);
+    transition: transform 500ms ease-in-out;
+    border-radius: 50%;
+}
+.magikarp{
+    display:flex;
+    justify-content: space-around;
+}
+strong:hover{
+    font-size: larger;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+#box1, #box12{
+    margin-top: 100px;
+}
+#box1, #box5, #box13, #box14, #box15{
+    margin-left: 100px;
+}
+.up{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    flex-wrap: wrap;
+    height: 1200px;
+    width: 300px;
+
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+/* A.className */
+/* #id A */
+/* A * - this selects all elements inside of A*/
+/* A + B This selects all B elements that directly follow A. 
+Elements that follow one another are called siblings. 
+They're on the same level, or depth. */
+
+/* A ~ B selects all B that follows A */
+/* A > B selects all B that are a direct children of A */
+/* :first-child selects ALL first child elements */
+/* A B:first-child selects all first child B elements that are inside of A */
+/* A:only-child selects the A elements that are the only child  of some other elements */
+/* :last-child selects all last-child elements */
+/* A B:last-child selects the last B elements inside of any A */
+/* :nth-child(8) selects every element that is the 8th child of another element */
+/* :nth-last-child(2) selects the children from the bottom of the parent */
+/* A:first-type selects the first A in any element */
+/* div:nth-of-type(2) selects the second instance of a div */
+/* :nth-of-type(odd) 1,3,5...*/
+/* A:nth-of-type(6n+2) selects every 6th instance of A, starting from (and including) the second instance  */
+/* A B:only-of-type selects B within any A if it is the only B in there */
+/* A:last-of-type selects the last A in every element*/
+/* A:empty selects all empty A elements  */
+/* :not() select all elements that don't match the negation selector */
+/* A[for] selects all A elements that have "for" attribute */
+/* [attribute="value"] For example bento{for="Vitaly"] */
+/* [attribute^="swim"] will choose elements that starts with swim */
+/* [attribute$="im"] will choose elements that ends with im */
+/* [attribute*="wi" will choose elements that contain wi  */    
+/* display:flex - place elements horizontally, dispkay:flow - place elements vertically(auto) */
