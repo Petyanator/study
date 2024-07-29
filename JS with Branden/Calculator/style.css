@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+div{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    height: 40rem;
+    width: 20rem;
+}
+h1{
+    grid-column: 1/5;
+    grid-row: 1/4;
+    word-wrap: break-word;
+}
