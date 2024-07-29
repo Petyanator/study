@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 20rem;
+            height: 37rem;
+            transition: all 0.2s ease-in-out;
+
+        }
+
+        #front {
+            background-color: red;
+        }
+
+        #back {
+            background-color: blue;
+            width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: row">
+        <div id="front" class="card"></div>
+        <div id="back" class="card"></div>
+    </div>
+
+    <script>
+        const frontCard = document.getElementById("front")
+        const backCard = document.getElementById("back")
+
+        document.getElementById("front").addEventListener("click", () => {
+            frontCard.style.width = "0px"
+            console.log("CLICKED, ", frontCard)
+            setTimeout(() => {
+                backCard.style.width = "20rem"
+                backCard.style.transform = "translateY(20rem)"
+            }, 200)
+
+        })
+    </script>
+</body>
+
+
+</html>
