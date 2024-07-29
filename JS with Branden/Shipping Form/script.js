@@ -23,5 +23,14 @@ document.addEventListener("DOMContentLoaded", function(){
         let Date = e.target.elements["date"].value
         let Email = e.target.elements["email"].value
         console.log(FirstName)
+        
+        //////////////////////////////////////////////
+
+        if(FirstName.length < 10){
+            // return an error message
+        }
+        if(SecondName.length < 10){
+            // return an error message
+        }
     })
 })
