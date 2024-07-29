@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipping Form</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <form action="">
         <h2>Shipping Form</h2>
         <label for="firstname">First Name</label>
-        <input type="text" id="firstname" required>
+        <br>
+        <input type="text" name="firstname" id="firstname" class="inputtext" required>
         <br>
         <label for="secondname">Second Name</label>
-        <input type="text" id="secondname" required>
+        <br>
+        <input type="text" name="secondname" id="secondname" class="inputtext" required>
         <br>
         <label for="city">City</label>
-        <input type="text" id="city" required>
+        <br>
+        <input type="text" name="city" id="city" class="inputtext" required>
         <br>
         <label for="zipcode">Zipcode</label>
-        <input type="text" id="zipcode" required>
+        <br>
+        <input type="text" name="zipcode" id="zipcode" class="inputtext" required>
         <br>
         <label for="date">Date</label>
-        <input type="date" id="date" required>
+        <br>
+        <input type="date" name="date" id="date" class="inputtext" required>
         <br>
         <label for="email">Email</label>
-        <input type="email" id="email" required>
+        <br>
+        <input type="email" name="email" id="email" class="inputtext" required>
         <br>
         <label for="agc">Agree to terms and conditions</label>
         <input type="checkbox" required>
         <br>
-        <button type="submit"></button>
+        <button type="submit" id="button">Submit</button>
     </form>
+    <script src="./script.js"></script>
 </body>
 </html>

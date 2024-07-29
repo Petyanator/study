@@ -1,0 +1,44 @@
+form{
+    height: 40rem;
+    width: 30rem;
+    border: 10px solid rgb(250, 250, 250);
+    border-radius: 10px;
+    box-shadow:  1px 1px 32px 2px rgb(0, 0, 0)
+}
+.inputtext{
+    margin-top: 0.4rem;
+    width: 89%;
+    height: 1.4rem;
+    margin-bottom: 1rem; 
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    border-radius: 6px;
+}
+label{
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+button{
+    background: #0092fb;
+    border: none;
+    cursor: pointer;
+    width: 91%;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    height: 2rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    color: aliceblue;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
