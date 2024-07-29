@@ -44,3 +44,19 @@ button{
     font-family:Georgia, 'Times New Roman', Times, serif;
     box-shadow: 0 0 6px 4px #0092fb;
 }
+.input-error{
+    border: 2px solid red;
+    animation: moma 2s infinite;
+    animation-iteration-count: infinite;
+}
+@keyframes moma{
+    0% {
+        box-shadow: 0px 0px 5px 0px red; /* starting small */
+    }
+    50% {
+        box-shadow: 0px 0px 10px 0px red; /* growing bigger */
+    }
+    100% {
+        box-shadow: 0px 0px 5px 0px red; /* returning to small */
+    }
+}
