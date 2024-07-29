@@ -23,14 +23,29 @@ document.addEventListener("DOMContentLoaded", function(){
         let Date = e.target.elements["date"].value
         let Email = e.target.elements["email"].value
         console.log(FirstName)
-        
+        verifyFormData(FirstName, SecondName, Zipcode, City, Date, Email))
         //////////////////////////////////////////////
-
-        if(FirstName.length < 10){
-            // return an error message
-        }
-        if(SecondName.length < 10){
-            // return an error message
-        }
     })
-})
+    function verifyFormData(FirstName, SecondName, Zipcode, City, Date, Email){
+            if(FirstName.length > 10 || FirstName === ""){
+                // return an error message
+                console.log(FirstName + "error")
+                errors.push(FirstName)
+            }
+            if(SecondName.length > 10 || SecondName === ""){
+                // return an error message
+                console.log(SecondName + "error")
+                errors.push(SecondName)
+            }
+            if (Zipcode === "" || isNaN(Zipcode) || Zipcode.length != 5){
+                // return
+                console.log(Zipcode + "error")
+                errors.push(Zipcode)
+            }
+            if(City.length < 10){
+                // return
+                console.log(City + "error")
+                errors.push(City)
+            }
+        }
+    return errors
