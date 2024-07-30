@@ -68,6 +68,8 @@ plus.addEventListener("click", function(){
 dot.addEventListener("click", function(){
     mainText.textContent += "."
 })
+
+
 ChangeSign.addEventListener("click", function(){
     CountforSign++
     if (CountforSign % 2 === 1){
@@ -82,6 +84,8 @@ function firstAction1(){
 function secondAction2(){
     mainText.textContent +="-"
 }
+
+
 bracket.addEventListener("click", function(){
     clickCount++
     if (clickCount % 2 === 1){
@@ -123,7 +127,7 @@ equal.addEventListener("click", function(){
                     break
             }
         }
-    }
+    }   
     mainText.textContent = result   
 })
 
