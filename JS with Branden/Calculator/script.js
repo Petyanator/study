@@ -9,7 +9,7 @@ const eight = document.getElementById("eight")
 const nine = document.getElementById("nine")
 const zero = document.getElementById("zero")
 const cleanAll = document.getElementById("C")
-const mainText = document.getElementById("output")
+let mainText = document.getElementById("output")
 const bracket = document.getElementById("brackets")
 const percent = document.getElementById("percent")
 const divide = document.getElementById("divide")
@@ -54,16 +54,16 @@ one.addEventListener("click", function(){
     mainText.textContent += "1"
 })
 divide.addEventListener("click", function(){
-    mainText.textContent += "/"
+    mainText.textContent += " / "
 })
 multiply.addEventListener("click", function(){
-    mainText.textContent += "*"
+    mainText.textContent += " * "
 })
 minus.addEventListener("click", function(){
-    mainText.textContent += "-"
+    mainText.textContent += " - "
 })
 plus.addEventListener("click", function(){
-    mainText.textContent += "+"
+    mainText.textContent += " + "
 })
 dot.addEventListener("click", function(){
     mainText.textContent += "."
@@ -99,3 +99,31 @@ function secondAction(){
 percent.addEventListener("click", function(){
     mainText.textContent += "%"
 })
+
+equal.addEventListener("click", function(){
+    let numbers = mainText.textContent.split(" ")
+    let result = parseFloat(numbers[0])
+    for(i = 0; numbers.length > i; i++){
+        let nextNumber = parseFloat(numbers[i + 1])
+        if(isNaN(numbers[i]) == true){
+            switch(numbers[i]){
+                case "*":
+                    result *= nextNumber
+                    break
+                case "/":
+                    result /= nextNumber
+                    break
+                case "-":
+                    result -= nextNumber
+                    break
+                case "+":
+                    result += nextNumber
+                    break 
+                default:
+                    break
+            }
+        }
+    }
+    mainText.textContent = result
+})
+
