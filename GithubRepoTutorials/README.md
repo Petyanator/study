@@ -17,6 +17,7 @@ Status
 Add
 Commit
 
+pull
 push
 
 Example commands:

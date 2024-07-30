@@ -10,7 +10,6 @@ const nine = document.getElementById("nine")
 const zero = document.getElementById("zero")
 const cleanAll = document.getElementById("C")
 let mainText = document.getElementById("output")
-const bracket = document.getElementById("brackets")
 const percent = document.getElementById("percent")
 const divide = document.getElementById("divide")
 const multiply = document.getElementById("multiply")
@@ -19,6 +18,7 @@ const plus = document.getElementById("plus")
 const equal = document.getElementById("equal")
 const dot = document.getElementById("dot")
 const ChangeSign = document.getElementById("change-sign")
+const deleteBtn = document.getElementById("delete")
 let clickCount = 0
 let CountforSign = 0
 
@@ -53,6 +53,9 @@ nine.addEventListener("click", function(){
 one.addEventListener("click", function(){
     mainText.textContent += "1"
 })
+zero.addEventListener("click", function(){
+    mainText.textContent += "0"
+})
 divide.addEventListener("click", function(){
     mainText.textContent += " / "
 })
@@ -65,9 +68,7 @@ minus.addEventListener("click", function(){
 plus.addEventListener("click", function(){
     mainText.textContent += " + "
 })
-dot.addEventListener("click", function(){
-    mainText.textContent += "."
-})
+
 
 
 ChangeSign.addEventListener("click", function(){
@@ -82,26 +83,16 @@ function firstAction1(){
     mainText.textContent +=""
 }
 function secondAction2(){
+    if(mainText.textContent.includes("-")){
+        mainText.textContent += ""
+    } else{
     mainText.textContent +="-"
-}
-
-
-bracket.addEventListener("click", function(){
-    clickCount++
-    if (clickCount % 2 === 1){
-        firstAction()
-    } else {
-        secondAction()
     }
-})
-function firstAction(){
-    mainText.textContent +=" ( "
 }
-function secondAction(){
-    mainText.textContent +=" ) "
-}
+
 percent.addEventListener("click", function(){
-    mainText.textContent += "%"
+    let percent = parseFloat(mainText.textContent) / 100
+    mainText.textContent = percent
 })
 
 equal.addEventListener("click", function(){
@@ -130,4 +121,18 @@ equal.addEventListener("click", function(){
     }   
     mainText.textContent = result   
 })
-
+dot.addEventListener("click", function(){
+    let numbers1 = mainText.textContent.split(" ")
+    if(numbers1.includes(".") || numbers1.includes("0.")){
+        mainText.textContent += ""
+    } else if(numbers1[0] == ""){
+        mainText.textContent += "0."
+    } else{
+        mainText.textContent += "."
+    }
+})
+deleteBtn.addEventListener("click", function(){
+    let numbers2 = mainText.textContent.split("")
+    numbers2.pop()
+    mainText.textContent = numbers2.join("")
+})
