@@ -91,10 +91,10 @@ bracket.addEventListener("click", function(){
     }
 })
 function firstAction(){
-    mainText.textContent +="("
+    mainText.textContent +=" ( "
 }
 function secondAction(){
-    mainText.textContent +=")"
+    mainText.textContent +=" ) "
 }
 percent.addEventListener("click", function(){
     mainText.textContent += "%"
@@ -124,6 +124,6 @@ equal.addEventListener("click", function(){
             }
         }
     }
-    mainText.textContent = result
+    mainText.textContent = result   
 })
 
