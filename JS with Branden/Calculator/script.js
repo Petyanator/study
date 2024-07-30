@@ -56,17 +56,41 @@ one.addEventListener("click", function(){
 zero.addEventListener("click", function(){
     mainText.textContent += "0"
 })
+    let Count1 = 0
 divide.addEventListener("click", function(){
-    mainText.textContent += " / "
+    Count1++
+    if(Count1 === 1){
+        mainText.textContent += " / "
+    } else{
+        mainText.textContent += ""
+    }
 })
+    let Count2 = 0
 multiply.addEventListener("click", function(){
-    mainText.textContent += " * "
+    Count2++
+        if(Count2 === 1){
+        mainText.textContent += " * "
+    } else{
+        mainText.textContent += ""
+    }
 })
+    let Count3 = 0
 minus.addEventListener("click", function(){
+    Count3++
+        if(Count3 === 1){
     mainText.textContent += " - "
+    } else{
+        mainText.textContent += ""
+    }
 })
+    let Count4 = 0
 plus.addEventListener("click", function(){
+    Count4++
+        if(Count4 === 1){
     mainText.textContent += " + "
+    } else{
+        mainText.textContent += ""
+    }
 })
 
 

@@ -16,8 +16,15 @@ h1{
     grid-column: 1/5;
     grid-row: 1/4;
     word-wrap: break-word;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: 3rem;
+    width: 16rem;
+    height: 11rem;
+    align-self: center;
+    justify-self: center;
+    border: 6px solid rgb(255, 166, 0);
+    border-radius: 12px;
+    background-color: white;
 }
 button{
     border: none;
