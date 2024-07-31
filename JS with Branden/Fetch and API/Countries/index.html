@@ -9,7 +9,16 @@
 <body>
     <select name="" id="select">
     </select>
-    <div id="name"></div>
-    <script src="./script.js"></script>
+    <div id="namebox"></div>
+    <button id="showImageBtn">Generate Image</button>
+    <img id="myImage" alt="">
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+    <script src="./script.js" type="module"></script>
 </body>
 </html>
