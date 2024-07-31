@@ -42,7 +42,7 @@ fetch("countryAndCapitals.json")
   .catch(error => console.error('Error fetching data:', error));
 
 // Access your API key (Ensure this key is secured)
-const API_KEY = "AIzaSyDjffOQz3AChx1WgKa8Lj5fytio5ieS7eM";
+const API_KEY = "Enter your API";
 const genAI = new google.generativeai.GoogleGenerativeAI(API_KEY);
 
 // Converts a File object to a GoogleGenerativeAI.Part object.
