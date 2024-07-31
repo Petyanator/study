@@ -57,39 +57,36 @@ zero.addEventListener("click", function(){
     mainText.textContent += "0"
 })
     let Count1 = 0
+    const operators = ["+", "-", "/", "*"]
 divide.addEventListener("click", function(){
-    Count1++
-    if(Count1 === 1){
+    const lastChar = mainText.textContent.trim().slice(-1)
+    if(Count1 === 0 || !operators.includes(lastChar)){
         mainText.textContent += " / "
-    } else{
-        mainText.textContent += ""
+        Count1++
     }
 })
     let Count2 = 0
 multiply.addEventListener("click", function(){
-    Count2++
-        if(Count2 === 1){
+    const lastChar1 = mainText.textContent.trim().slice(-1)
+    if(Count2 === 0 || !operators.includes(lastChar1)){
         mainText.textContent += " * "
-    } else{
-        mainText.textContent += ""
+        Count2++
     }
 })
     let Count3 = 0
 minus.addEventListener("click", function(){
-    Count3++
-        if(Count3 === 1){
-    mainText.textContent += " - "
-    } else{
-        mainText.textContent += ""
+    const lastChar2 = mainText.textContent.trim().slice(-1)
+    if(Count3 === 0 || !operators.includes(lastChar2)){
+        mainText.textContent += " - "
+        Count3++
     }
 })
     let Count4 = 0
 plus.addEventListener("click", function(){
-    Count4++
-        if(Count4 === 1){
-    mainText.textContent += " + "
-    } else{
-        mainText.textContent += ""
+    const lastChar3 = mainText.textContent.trim().slice(-1)
+    if(Count4 === 0 || !operators.includes(lastChar3)){
+        mainText.textContent += " + "
+        Count4++
     }
 })
 
