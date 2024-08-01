@@ -11,7 +11,7 @@ image = bomba.appendChild(document.createElement("img"))
 
 
 seledka.addEventListener("change", function(e){
-    API_KEY = "Your API_key"
+    API_KEY = "Enter your API KEY"
     let bombaklat = e.target.value
     console.log(bombaklat)
     date = bombaklat
