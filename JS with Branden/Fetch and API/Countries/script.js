@@ -41,42 +41,4 @@ fetch("countryAndCapitals.json")
   })
   .catch(error => console.error('Error fetching data:', error));
 
-// Access your API key (Ensure this key is secured)
-const API_KEY = "Enter your API";
-const genAI = new google.generativeai.GoogleGenerativeAI(API_KEY);
-
-// Converts a File object to a GoogleGenerativeAI.Part object.
-async function fileToGenerativePart(file) {
-  const base64EncodedDataPromise = new Promise((resolve) => {
-    const reader = new FileReader();
-    reader.onloadend = () => resolve(reader.result.split(',')[1]);
-    reader.readAsDataURL(file);
-  });
-  return {
-    inlineData: { data: await base64EncodedDataPromise, mimeType: file.type },
-  };
-}
-
-async function run() {
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
-  const prompt = "What's different between these pictures?";
-
-  const imageParts = await Promise.all(
-    [...fileInputEl.files].map(fileToGenerativePart)
-  );
-
-  try {
-    const result = await model.generateContent([prompt, ...imageParts]);
-    const response = await result.response;
-    const text = await response.text();
-    output.textContent = text;
-    console.log(text);
-  } catch (error) {
-    console.error('Error generating content:', error);
-  }
-}
-
-// Attach event listener to the button
-document.getElementById("generate-content").addEventListener("click", run);
 
