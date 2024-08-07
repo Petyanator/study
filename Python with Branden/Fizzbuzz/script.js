@@ -12,3 +12,6 @@ for(i = 1; i < Userimput; i++){
         li.textContent = i
     }
 }
+const p = document.body.appendChild(document.createElement("p"))
+p.textContent = "fizzbuzz"
+p.textContent = i
