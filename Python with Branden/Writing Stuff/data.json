@@ -1,0 +1,20 @@
+{
+    "textstore_with_ids": [
+        {
+            "id": 1,
+            "text": "Buy Milk"
+        },
+        {
+            "id": 2,
+            "text": "Buy Car"
+        },
+        {
+            "id": 3,
+            "text": "Gamble everything"
+        },
+        {
+            "id": 4,
+            "text": "GOOD JOB"
+        }
+    ]
+}
