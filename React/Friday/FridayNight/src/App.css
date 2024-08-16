@@ -1,0 +1,169 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#root {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+#navbar{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#navbar li{
+  margin-left: 4%;
+  font-size: 120%;
+  text-transform: uppercase;
+}
+#navbar li a{
+  color: white;
+}
+#mainbox{
+  margin-top: 4%;
+  width: 100%;
+  position: relative;
+}
+#mainbox h1{
+  position: absolute;
+  text-shadow: 2px 2px #24242450;
+  top: 2%;
+  left: 2%;
+}
+#mainbox h2{
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  width: 40%;
+  text-align: right;
+}
+#mainbox img{
+  width: 100%;
+  height: 100%;
+}
+#featurescase{
+  margin-top: 8%;
+  margin-bottom: 8%;
+  padding-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#featurescase h1{
+  margin-bottom: 6%;
+}
+#featuresbox{
+  padding-bottom: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.feature{
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-top: 7%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20%;
+  box-shadow: 0 0 10px 0 white;
+}
+.feature span{
+  font-size: 400%;
+}
+.feature p{
+  font-size: 150%;
+}
+#aboutusphoto{
+  height: 30rem;
+  width: auto;
+}
+#aboutusbox{
+  padding-top: 10%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#aboutusbox div{
+  width: 40%;
+}
+#aboutusbox div p{
+  font-size: 150%;
+}
+#contactcase{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15%;
+  margin-top: 8%;
+
+}
+#contactbox{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#bombaclat{
+  border: 2px solid white;
+  padding: 2%;
+  border-radius: 10%;
+}
+#contactbox form{
+  padding: 4%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  border: 2px solid white;
+  border-radius: 10%;
+}
