@@ -29,3 +29,23 @@ string = "Computers"
 slice_string = slice(1,4)
 print(string[slice_string])
 print(string[1:4])
+
+# split(), find(), join()
+list1 = "The quick brown fox jumps over the lazy dog"
+list2 = "apple,banana,cherry,date,elderberry"
+
+# Split() - turns string into array
+
+list11 = list1.split()
+print(list11)
+
+# Join() - turns array into string
+
+list22 = " ".join(list11)
+print(list22)
+
+# find() - just finds what you want
+
+long_text = "Python is fun and Python is powerful"
+print(long_text.find("Python", 10))
+print(long_text.find("Fish", 10))

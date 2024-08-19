@@ -4,6 +4,7 @@ last_name = "Beckham"
 
 full_name = first_name + " " + middle_name + " " + last_name
 
+
 print(full_name)
 
 parts = full_name.split()
