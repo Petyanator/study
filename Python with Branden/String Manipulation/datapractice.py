@@ -30,3 +30,9 @@ print(json_string)
 
 name_index = json_string.find("name")
 print(name_index)
+data_string = json_string.split(",")
+
+# After split each key and value pair became as one element in array
+
+print(data_string[3])
+
