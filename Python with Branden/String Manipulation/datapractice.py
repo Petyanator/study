@@ -1,3 +1,4 @@
+# After split each key and value pair became as one element in array
 data = {
   "id": 1,
   "name": "Leanne Graham",
@@ -26,13 +27,18 @@ data = {
 # print(data["phone"])
 
 json_string = str(data)
-print(json_string)
 
-name_index = json_string.find("name")
-print(name_index)
-data_string = json_string.split(",")
 
-# After split each key and value pair became as one element in array
+name_index = json_string.find("name") + 8
 
-print(data_string[3])
+name_len = len(data["name"]) + name_indexs
+
+print(json_string[name_index:name_len])
+
+email_index = json_string.find("email") + 9
+
+email_len = len(data["email"]) + email_index
+
+print(json_string[email_index:email_len])
+
 
