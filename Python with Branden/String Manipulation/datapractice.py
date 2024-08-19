@@ -22,5 +22,11 @@ data = {
   }
 }
 
-print(type(data))
-print(data["phone"])
+# print(type(data))
+# print(data["phone"])
+
+json_string = str(data)
+print(json_string)
+
+name_index = json_string.find("name")
+print(name_index)

@@ -8,10 +8,14 @@ response = requests.get(url)
 
 # Check if the request was successful (status code 200)
 if response.status_code == 200:
-    # Print the response content
-    ##### FOR FUTURE REFERENCE, this response will actually be of type "list". For practice I am converting it to a string, lists are a big subject and will be revisited another day #####
-    # print(type(str(response.json())))
+    # Convert the JSON response to a string
     json_string = str(response.json())
+
+    # Print the type of the response before conversion (uncomment the line below if needed)
+    # print(type(response.json()))  # This would show <class 'dict'>
+
+    # Print the JSON response as a string
+    print(json_string)
 
 else:
     # Print an error message
