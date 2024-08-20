@@ -27,3 +27,4 @@ parts1 = full_name1.split()
 print(parts1[0])
 print(parts1[1])
 print(parts1[2])
+

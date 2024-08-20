@@ -1,12 +1,9 @@
 man = "Superman"
 woman = "ChiChi"
 
-# man_woman = ""
-
-# Make a swapped names
-
+# Combine the names with a space
 man_woman = man + " " + woman
-(man, woman) = (woman, man)
 
-man_woman = man + " " + woman
-print(man_woman)
+# Swap the entire words
+swapped_names = " ".join(reversed(man_woman.split()))
+print(swapped_names)
