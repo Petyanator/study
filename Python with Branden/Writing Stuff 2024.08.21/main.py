@@ -491,13 +491,13 @@ def combatsystem(player_class, monster_type, class_inventory,hero_health):
     elif user_input == 2:
         skills_panel()
     elif user_input == 3:
-        items()
+        items(hero_health,class_inventory, player_class, monster_type)
     elif user_input == 4:
         block()
     elif user_input == 5:
         dodge()
     elif user_input == 6:
-        escape()
+        escape(player_class, class_inventory, hero_health, monster_type)
     else:
         print("Invalid input")
         combatsystem(player_class, monster_type, class_inventory,hero_health)
@@ -520,11 +520,6 @@ def attack(player_class, monster_type, class_inventory,hero_health):
             print(f"{"-" * 20}\nYou have died\n{"-" * 20}")
         combatsystem(player_class, monster_type, class_inventory,hero_health)
     
-
-
-
-
-
 def escape_system(player_class, class_inventory):
     print("-" * 20)
     print("You have successfully avoided enemy")
@@ -532,7 +527,29 @@ def escape_system(player_class, class_inventory):
     print("-" * 20)
     Player_actions(player_class, class_inventory)
 
+def escape(player_class, class_inventory, hero_health, monster_type):
+    print(f"{"*"*20}\nYou are trying to escape\nBase Escape Chance multiplier: 2x")
+    chance_to_escape = player_class.agility * 2
+    random_num = random.randint(1, 40)
+    if random_num <= chance_to_escape:
+        print(f"{"*"*20}\nCongratulations\nYou have escaped\nYour number: {chance_to_escape}\ndGame's number: {random_num}\n{"*"*20}")
+        Player_actions(player_class, class_inventory, hero_health)
+    else:
+        print("Luck is not on your side today. Continue combat")
+        combatsystem(player_class, monster_type, class_inventory,hero_health)
 
+def items(hero_health,class_inventory, player_class, monster_type):
+    print(f"{"-" * 20}\nYou have opened your inventory.What would you like to use?\n{"-" * 20}")
+    for item in class_inventory:
+        print(item)
+        user_input = input()
+        user_input = check_input_v1234(user_input)
+        if user_input == 1:
+            hero_health += 40
+            combatsystem(player_class, monster_type, class_inventory,hero_health)
+        else:
+            print("Invalid input. Try again")
+            items(hero_health,class_inventory, player_class, monster_type)
 
 
 enterdungeon()
