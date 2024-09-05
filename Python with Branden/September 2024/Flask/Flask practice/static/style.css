@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Retro typewriter font */
+    background-color: #f4e1d2; /* Light beige background */
+    color: #333; /* Dark text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #3a3a3a; /* Dark background */
+    color: #f4e1d2; /* Light text */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #f08c42; /* Accent color */
+    font-size: 2.5em;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #f4e1d2;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #f08c42; /* Accent color on hover */
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+}
+
+h1, h2, h3 {
+    color: #f08c42; /* Accent color for headings */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    background-color: #f08c42;
+    border: none;
+    color: #f4e1d2;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: #d76b29;
+}
+
+/* Footer */
+footer {
+    background-color: #3a3a3a;
+    color: #f4e1d2;
+    text-align: center;
+    padding: 10px;
+    border-top: 5px solid #f08c42;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1em;
+}
