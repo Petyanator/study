@@ -15,6 +15,7 @@ function App() {
         </div>
         <br />
         <button type="submit">Submit</button>
+        <button type='reset'>⟳</button>
       </form>
     </>
   )
