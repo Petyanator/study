@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Alice",
+        "career": "Software Engineer"
+    },
+    {
+        "name": "Bob",
+        "career": "Data Scientist"
+    },
+    {
+        "name": "Carol",
+        "career": "Graphic Designer"
+    },
+    {
+        "name": "David",
+        "career": "Mechanical Engineer"
+    },
+    {
+        "name": "Eve",
+        "career": "Cybersecurity Analyst"
+    },
+    {
+        "name": "Frank",
+        "career": "Project Manager"
+    },
+    {
+        "name": "Grace",
+        "career": "UX Designer"
+    },
+    {
+        "name": "Hank",
+        "career": "Network Administrator"
+    },
+    {
+        "name": "Ivy",
+        "career": "Marketing Specialist"
+    },
+    {
+        "name": "Jack",
+        "career": "DevOps Engineer"
+    }
+]
