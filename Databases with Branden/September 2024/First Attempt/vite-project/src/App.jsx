@@ -6,16 +6,16 @@ function App() {
     <>
       <form action="">
         <h2>Login</h2>
-        <div>
         <input type="text" id='username' placeholder='Username'/>
-        </div>
         <br />
-        <div>
         <input type="text" id='password' placeholder='Password'/>
-        </div>
         <br />
+        <input type="text" id='password' placeholder='Email'/>
+        <br />
+        <div id='butpack'>
         <button type="submit">Submit</button>
-        <button type='reset'>⟳</button>
+        <button type='reset' id='resbtn'>⟳</button>
+        </div>
       </form>
     </>
   )
